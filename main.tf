@@ -1,5 +1,6 @@
-resource "null_resource" "test" {
-  provisioner "local-exec" {
-    command = "echo ${var.env}"
-  }
+module "consul" {
+  source = "github.com/harishsarmav/tf-module-vpc"
+  version = "main"
 }
+
+
