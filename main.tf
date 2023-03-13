@@ -24,6 +24,6 @@ module "vpc" {
 #  nat_gw                      = lookup(each.value, "nat_gw", false)
 #}
 
-output "subnet_ids" {
-  value = module.subnet_ids
+#output "subnet_ids" {
+#  value = module.subnet_ids
 }
