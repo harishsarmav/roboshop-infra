@@ -3,7 +3,8 @@ default_vpc_id = "vpc-0416eb81280cc1347"
 
 vpc = {
   main = {
-    cidr_block = "10.0.0.0/16"
+    cidr_block          = "10.0.0.0/16"
+    availability_zone   = ["us-east-1a", "us-east-1b"]
     subnets    = {
       public = {
         name              = "public"
