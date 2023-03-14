@@ -5,7 +5,6 @@ vpc = {
   main = {
     cidr_block          = "10.0.0.0/16"
     availability_zone   = ["us-east-1a", "us-east-1b"]
-    subnets    = {
       public_subnets = {
         public = {
           name            = "public"
@@ -13,7 +12,6 @@ vpc = {
           internet_gw     = true
         }
       }
-
       private_subnets = {
         web = {
           name              = "web"
@@ -21,7 +19,7 @@ vpc = {
           nat_gw            = true
         }
         app = {
-          name              = "qpp"
+          name              = "app"
           cidr_block        = ["10.0.4.0/24", "10.0.5.0/24"]
           nat_gw            = true
         }
