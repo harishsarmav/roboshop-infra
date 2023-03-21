@@ -32,9 +32,9 @@ vpc = {
   }
 }
 
-docdb = {
-  main = {
-    vpc_name = "main"
-    subnets_name = "db"
-  }
-}
+#docdb = {
+#  main = {
+#    vpc_name = "main"
+#    subnets_name = "db"
+#  }
+#}
