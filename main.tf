@@ -11,10 +11,10 @@ module "vpc" {
 
 }
 
-module "docdb" {
-  source     = "github.com/harishsarmav/tf-module-docdb"
-  env        = var.env
-
-  for_each = var.docdb
-  subnet_ids = lookup(lookup(lookup(lookup(module.vpc, each.value.vpc_name, null), "private_subnet_ids", null), each.value.subnets_name, null), "subnets_name", null)
-}
+#module "docdb" {
+#  source     = "github.com/harishsarmav/tf-module-docdb"
+#  env        = var.env
+#
+#  for_each = var.docdb
+#  subnet_ids = lookup(lookup(lookup(lookup(module.vpc, each.value.vpc_name, null), "private_subnet_ids", null), each.value.subnets_name, null), "subnets_name", null)
+#}
